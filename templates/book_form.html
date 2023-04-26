@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="{{url_for('payment')}}" >
+        <input type="hidden" name='car_id' value="{{car_id}}">
+        <input type="hidden" name='name' value="{{name}}">
+        <input type="number" name='price' value="{{price}}" hidden>
+ 
+        <div class="form-container">
+            <div class="input-box">
+            <span>Locations</span>
+            <input type="search" name="location" placeholder="search location">
+        </div>
+        <div class="input-box">
+            <span>Pick-up Time</span>
+            <input type="time" name="start"  id="">
+        </div>
+        <div class="input-box">
+            <span>Return Time</span>
+            <input type="time" name="end"   id="">
+        </div>
+        <input type="submit" name="submit" id="" class="btn1">
+        </form>
+        </div>
+</body>
+</html>

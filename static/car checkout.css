@@ -1,0 +1,31 @@
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+
+input[type="text"], textarea {
+  width: 300px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-background {
+    background-image: url("https://img.freepik.com/premium-photo/charging-modern-electric-car-battery-street-power-supply-plugged-into-electric-car_81340-23903.jpg?size=626&ext=jpg&ga=GA1.2.1667490823.1679980570&semt=sph");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  /* Style form elements as needed */
+  

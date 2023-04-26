@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Rental Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Car Rental Dashboard</h1>
+      <div class="search-container">
+        <input type="text" placeholder="Search by Car Name...">
+        <button type="submit">Search</button>
+      </div>
+      <div class="filter-container">
+        <h3>Filter</h3>
+        <label for="brand">Brand:</label>
+        <select id="brand">
+          <option value="all">All Brands</option>
+          <option value="toyota">Toyota</option>
+          <option value="honda">Honda</option>
+          <option value="ford">Ford</option>
+        </select>
+        <label for="seats">Seats:</label>
+        <select id="seats">
+          <option value="all">All Seats</option>
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+        <label for="price">Price Range:</label>
+        <input type="range" id="price" min="0" max="100" value="50">
+        <span id="price-display">$50</span>
+      </div>
+      <div class="car-list">
+        <div class="car-item">
+          <img src="" alt="Car Image">
+          <div class="car-details">
+            <h2>Toyota Camry</h2>
+            <ul>
+              <li><i class="fas fa-users"></i> 4 Seats</li>
+              <li><i class="fas fa-gas-pump"></i> 30 MPG</li>
+              <li><i class="fas fa-tachometer-alt"></i> 120 MPH</li>
+              <li><i class="fas fa-dollar-sign"></i> 50/day</li>
+            </ul>
+            <button>Book Now</button>
+          </div>
+        </div>
+        <div class="car-item">
+          <img src="" alt="Car Image">
+          <div class="car-details">
+            <h2>Honda Civic</h2>
+            <ul>
+              <li><i class="fas fa-users"></i> 4 Seats</li>
+              <li><i class="fas fa-gas-pump"></i> 35 MPG</li>
+              <li><i class="fas fa-tachometer-alt"></i> 110 MPH</li>
+              <li><i class="fas fa-dollar-sign"></i> 45/day</li>
+            </ul>
+            <button>Book Now</button>
+          </div>
+        </div>
+        <div class="car-item">
+          <img src="" alt="Car Image">
+          <div class="car-details">
+            <h2>Ford Mustang</h2>
+            <ul>
+              <li><i class="fas fa-users"></i> 2 Seats</li>
+              <li><i class="fas fa-gas-pump"></i> 25 MPG</li>
+              <li><i class="fas fa-tachometer-alt"></i> 140 MPH</li>
+              <li><i class="fas fa-dollar-sign"></i> 45/day</li>
+            </ul>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in items %}
+    <div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+        {{url_for('static',filename=i[0]+'.jpg')}}
+    <img src="{{url_for('static',filename=i[0]+'.jpg')}}"height="100" width="100" class="exploreimage w-100"/>
+    <br>
+    <label>{{i[1]}}</label>
+
+    <label>{{i[2]}}</label>
+
+    <label >{{i[3]}}</label>
+
+    <label >{{i[4]}}</label>
+
+    <label >{{i[5]}}</label>
+    </div>
+</div>
+</div>
+    {% endfor %}
+</body>
+</html>

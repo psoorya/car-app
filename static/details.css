@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    color: rgb(255, 0, 0);
+  }
+
+
+.car-image {
+    max-width: 100%;
+    object-fit: cover;
+    padding: 50px;
+  }
+
+  #goo1 {
+    background-color: #c90202;
+    color: rgb(255, 254, 254);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border:0px;
+    margin-left: 20px;
+}
+#goo1:hover{
+    background-color: rgb(255, 255, 255);
+    color: #ff0000;
+}
+  
+
+.car-details {
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .car-details .details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .car-details .details .icon {
+    margin-right: 10px;
+  }
+
+
+
+.car-name {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.car-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.car-info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.info-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.info-text {
+    font-size: 18px;
+}

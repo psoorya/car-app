@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='mainPage.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="p-3 m-3 mr-auto d-flex flex-row">
+        <a href="autosport.html" class="btn btn-dark"> Back to Home</a>
+    </div>
+
+    <div id="dessertsPage">
+       <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="p-3 m-2">
+                    <form method="POST">
+                    <img src="https://img.freepik.com/free-photo/blue-sport-sedan-parked-yard_114579-5078.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=sph" class="menu-item-image w-100"/>
+                    <h4 class="mt-1">AUDI A4</h4>
+                   
+                    <div class="d-flex flex-row ">
+                        <p class="quantity mt-1">Quantity
+                            <select class="form-select" aria-label="Default select example" name="quantity">
+                                <option selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                
+                              </select>
+                        </p>
+                        
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <h6>Price <i class="fa fa-inr" aria-hidden="true">3500</i></h6>
+                        
+                    </div>
+                
+
+                    <div class="d-flex flex-row">
+                        <button class="btn btn-success add-button" type="submit"> <a href="lis.html"> Rent Now</a></button>
+
+                    </form>             
+                        <a href="{{url_for('cart',name='Payasam',price=80,imgurl='https://res.cloudinary.com/dtd5a2wr1/image/upload/v1674109907/th_idbnni.jpg')}}" class="btn btn-info ml-auto add-button"></a>
+                   </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="p-3 m-2">
+                    <form method="POST">
+                    <img src="https://img.freepik.com/free-photo/silver-metallic-color-sport-sedan-road_114579-5035.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=sph" class="menu-item-image w-100"/>
+                    <h4 class="mt-1">BMW 3-SERIES</h4>
+                   
+                    <div class="d-flex flex-row ">
+                        <p class="quantity mt-1">Quantity
+                            <select class="form-select" aria-label="Default select example" name="quantity">
+                                <option selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                
+                              </select>
+                        </p>
+                        
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <h6>Price <i class="fa fa-inr" aria-hidden="true">4000</i></h6>
+                        
+                    </div>
+                    
+                    <div class="d-flex flex-row">
+                        <button class="btn btn-success add-button" type="submit">Rent Now</button>
+
+                        
+                    </form>             
+                        <a href="{{url_for('cart',name='Gulab Jamun',price=99,imgurl='https://res.cloudinary.com/dtd5a2wr1/image/upload/v1674109826/th_wusoqk.jpg')}}" class="btn btn-info ml-auto add-button">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="p-3 m-2">
+                    <form method="POST">
+                    <img src="https://img.freepik.com/free-photo/red-mini-coupe-driving-highway_114579-4059.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=ais" class="menu-item-image w-100"/>
+                    <h4 class="mt-1">Volkswagen T-Cross</h4>
+                   
+                    <div class="d-flex flex-row ">
+                        <p class="quantity mt-1">Quantity
+                            <select class="form-select" aria-label="Default select example" name="quantity">
+                                <option selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              
+                              </select>
+                        </p>
+                        
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <h6>Price <i class="fa fa-inr" aria-hidden="true">2500</i></h6>
+                        
+                    </div>
+
+                    
+                    
+                    <div class="d-flex flex-row">
+                        <button class="btn btn-success add-button" type="submit">Rent Now</button>
+                    </form>             
+                        <a href="{{url_for('cart',name='Rasmalai',price=99,imgurl='https://tse4.mm.bing.net/th?id=OIP.50a71HQqBQ5MTYv9gjcPFQHaEq&pid=Api&P=0')}}" class="btn btn-info ml-auto add-button">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="p-3 m-2">
+                    <form method="POST">
+                    <img src="https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=ais" class="menu-item-image w-100"/>
+                    <h4 class="mt-1">Toyota RAV4</h4>
+                   
+                    <div class="d-flex flex-row ">
+                        <p class="quantity mt-1">Quantity
+                            <select class="form-select" aria-label="Default select example" name="quantity">
+                                <option selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                
+                              </select>
+                        </p>
+                       
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <h6>Price <i class="fa fa-inr" aria-hidden="true">3500</i></h6>
+                        
+                    </div>
+                    
+                    <div class="d-flex flex-row">
+                        <button class="btn btn-success add-button" type="submit">Rent Now</button>
+                    </form>             
+                        <a href="{{url_for('cart',name='Strawberry Ice-Creame',price=99,imgurl='https://res.cloudinary.com/dtd5a2wr1/image/upload/v1674110141/th_zau6gb.jpg')}}" class="btn btn-info ml-auto add-button">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="p-3 m-2">
+                    <form method="POST">
+                    <img src="https://img.freepik.com/premium-photo/black-luxury-business-class-car-with-beautiful-wheels-large-chrome-grille_263957-31.jpg?w=900" class="menu-item-image w-100"/>
+                    <h4 class="mt-1">BMW 4 Series GTI</h4>
+                  
+                    <div class="d-flex flex-row ">
+                        <p class="quantity mt-1">Quantity
+                            <select class="form-select" aria-label="Default select example" name="quantity">
+                                <option selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                           
+                              </select>
+                        </p>
+                        
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <h6>Price <i class="fa fa-inr" aria-hidden="true">3000</i></h6>
+                        
+                    </div>
+                     
+                    <div class="d-flex flex-row">
+                        <button class="btn btn-success add-button" type="submit">Rent Now</button>
+                    </form>             
+                        <a href="{{url_for('cart',name='Choco Cup Cake',price=99,imgurl='https://res.cloudinary.com/dtd5a2wr1/image/upload/v1674110213/th_xqhp3o.jpg')}}" class="btn btn-info ml-auto add-button">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="p-3 m-2">
+                    <form method="POST">
+                    <img src="https://img.freepik.com/free-photo/black-sport-car-highway-drive-sunset_114579-5064.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=ais" class="menu-item-image w-100"/>
+                    <h4 class="mt-1">Hyundai Elite i20</h4>
+                    
+                    <div class="d-flex flex-row ">
+                        <p class="quantity mt-1">Quantity
+                            <select class="form-select" aria-label="Default select example" name="quantity">
+                                <option selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                
+                              </select>
+                        </p>
+                       
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <h6>Price <i class="fa fa-inr" aria-hidden="true">2110</i></h6>
+                        
+                    </div>
+                    
+                    <div class="d-flex flex-row">
+                        <button class="btn btn-success add-button" type="submit">Rent Now</button>
+                    </form>             
+                        <a href="{{url_for('cart',name='Choco Chip Ice-Creame',price=110,imgurl='https://res.cloudinary.com/dtd5a2wr1/image/upload/v1674110364/th_kbngmo.jpg')}}" class="btn btn-info ml-auto add-button">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+       </div>
+    </div>
+
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autosport Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/244121539d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/autosport.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        
+        <a class="navbar-brand" href="#"> <img src="https://img.freepik.com/premium-psd/isolated-realistic-metal-matte-black-car-suv-from-left-front-view_16145-2238.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=ais" class="stylinglogo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="{{url_for('homepage1')}}" id="go">Home</a>
+            <a class="nav-link" href="#exploreSection"id="go">Explore</a>
+            <a class="nav-link" href="#contactSection" id="go">Contact Us</a>
+            
+            <a class="nav-link" href="{{url_for('faq')}}" id="go">FAQ</a>
+            <button id="goo2"><a class="nav-link" href="{{url_for('signin')}}" id="go">Sign Up</a></button>
+            <button id="goo1"><a class="nav-link" href="{{url_for('signin')}}" id="go">Log out</a></button>
+          </div>
+        </div>
+    </div>
+      </nav>
+    </div>
+
+      <!-- Banner Section -->
+
+      <div class="bgimg1 d-flex flex-column justify-content-end">
+        <div class="text-center mb-4">
+        <h1 class="head1"> Book Your Car Customized</h1>
+        <p class="paraline"> Better & Fast Services</p>
+      </div>
+    </div>
+
+
+      <!-- Services Section -->
+
+      <div class="bgcolor2 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="head2"> Why to choose Us?</h1>
+                    <p class="para2"> Book Your car in easy process </p>
+                </div>
+                
+                <div class="col-12 col-md-3">
+                    <div class="carding p-3">
+                        <img src="https://img.freepik.com/premium-vector/register-now-button-with-cursor-pointer-click-vector-web-button_123447-5432.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=sph" class="cardimage"/>
+                        <h1 class="chead"> Register with Us</h1>
+                        <p class="cpara">Drive as much as you want without paying anything extra!</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="carding p-3">
+                        <img src="https://img.freepik.com/free-vector/concept-credit-card-payment-landing-page_52683-24923.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=sph" class="cardimage"/>
+                        <h1 class="chead">Make Payment </h1>
+                        <p class="cpara">Freedom of driving cars as you own it minus the liabilities.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                  <div class="carding p-3">
+                      <img src="https://img.freepik.com/premium-vector/web-site-page-with-credit-card-check-mark-online-payment-ecommerce-banking-online-concept-3d-vector-icon-cartoon-minimal-style_365941-893.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=sph" class="cardimage"/>
+                      <h1 class="chead"> Upload Documents</h1>
+                      <p class="cpara">Upload required Documents to confirm your booking</p>
+                  </div>
+              </div>
+                
+                <div class="col-12 col-md-3">
+                    <div class="carding p-3">
+                        <img src="https://img.freepik.com/free-vector/delivery-logistics-shipment-isometric-conceptual-composition-with-smartphone-screen-delivery-truck-with-parcels-text-illustration_1284-29126.jpg?size=626&ext=jpg&ga=GA1.1.1667490823.1679980570&semt=ais" class="cardimage"/>
+                        <h1 class="chead">Get car delivered</h1>
+                        <p class="cpara">Get your car delivered at your doorstep</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+      </div>
+
+    <!-- Explore Section -->
+    <div id="exploreSection">
+    <!-- <div class="bgimgg3 pt-4 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="explorehead"> Explore Our Customisation Kits </h1>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669307821/car-spoilers-1634118983-6036290_kl9z3b.jpg" 
+                  class="exploreimage w-100"/>
+                  <h1 class="cardhead4"> Spoilers </h1>
+                  <a href="" class="explorelink"> View More 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </a>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </div> -->
+
+  <div class="bgcolor3 pt-4 pb-4">
+    <div class="container">
+      <div class="row">
+        {% for i in items +%}
+        
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+              <form method="POST" action="{{url_for('payment',car_id=i[0],name=i[1],price=i[5])}}"></form>
+    
+    <div>  
+    <img src="{{url_for('static',filename=i[0]+'.jpg')}}"height="160" width="35" class="exploreimage w-100" />
+    <a href="{{url_for('car_booking',car_id=i[0])}}"> <button id="goo3" class="nav-link" id="go">Book Now</button></a>
+    
+    
+
+    <br>
+    <label>{{i[1]}}</label>
+    <label>{{i[2]}}</label>
+    </div>
+  </div>
+    </div>
+  </form>
+    {% endfor %}
+  </div>
+    </div>
+    </div>
+  
+
+    
+    
+    
+  
+
+  <!-- Payment Section -->
+  <div id="paymentSection">
+  <div class="paybgimg pt-4 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-5 order-1 order-md-2">
+          <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532348/183-1837936_10-percent-discount-tag-10-discount-tag-png-removebg-preview_dg96sa.png"
+          class="paymentimg"/>
+        </div>
+        <div class="col-12 col-md-7 order-2 order-md-1">
+          <h1 class="payhead"> Payment</h1>
+          <p class="paypara"> Enjoy hassle-free payment with the plenitude of payment options
+            available for you. Also you will get a 10% discount on every order every time you pay online </p>
+           
+            <div class="mt-3">
+              <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532521/visa-card-img_nuawu2.png" 
+                  class="paycardimg"/>
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532551/master-card-img_c3owpp.png" 
+                  class="paycardimg"/>
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532581/paypal-card-img_zgqesf.png" 
+                  class="paycardimg"/>
+                  <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532616/american-express-img_ovm5iy.png" 
+                  class="paycardimg"/>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Contact Us Section 
+  <div id="contactSection">   
+  <section id="contact">
+       <div class="container">
+           <h1 class="text-center pt-3 pb-4" style="color:white;"> Contact Us</h1>
+           <div class="row mt-4">
+            <div class="col-12 col-lg-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122409.99752961188!2d80.57484326889931!3d16.510317726436995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9482d944b%3A0x939b7e84ab4a0265!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1669619766643!5m2!1sen!2sin" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-lg-6">
+              <form>
+                <input type="text" class="form-control form-control-lg" placeholder="Enter your Name">
+                <input type="email" class="form-control mt-3" placeholder="Enter your Email">
+                <input type="text" class="form-control mt-3" placeholder="Subject">
+                <div class="mb-3 mt-3">
+                  <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Feedback">
+                  </textarea>
+                </div>-
+              </form>
+              <button class="btn btn-success mt-3"> Contact Us</button>
+            </div>
+           </div>
+       </div>-->
+           <div class="container" id="icenter1">
+             <div class="socialicons mt-4">
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/accounts/onetap/?next=%2Fdirect%2Ft%2F17842324766423133" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/surya-prakash9603256474" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+           </div>
+  </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    
+
+
+</body>
+</html>

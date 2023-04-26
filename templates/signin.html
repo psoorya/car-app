@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="/static/signin.css">
+</head>
+<body>
+	<div class="form-container">
+		<h2>Sign In</h2>
+		<form method="POST">
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<a href="{{url_for('forgetpassword')}}">forgot password</a>
+			<a href="{{url_for('signin')}}">Don't have any account</a>
+
+			<button type="submit">Sign In</button>
+		</form>
+	</div>
+</body>
+</html>

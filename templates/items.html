@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Item Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000000;
+      color: white;
+    }
+
+    form {
+      background-color: #000000;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    select {
+      height: 40px;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #ff0000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff0000;
+    }
+
+    .error {
+      color: red;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Add cars</h1>
+  <form method="POST" enctype="multipart/form-data">
+
+    <label>Car Name</label>
+    <input type="text" name="name" required>
+
+    <label>Description</label>
+    <textarea name="desc" required></textarea>
+
+    <label>Mileage</label>
+    <input type="number" name="qty" required>
+
+    <label>Category</label>
+    <select name="category" required>
+      <option value="">Select a category</option>
+      <option value="Suv">Suv</option>
+      <option value="sports">sports</option>
+      <option value="Family">Family</option>
+      <option value="Jeep">Jeep</option>
+    </select>
+
+    <label>Price</label>
+    <input type="number" name="price" required>
+
+    <label>Image</label>
+    <input type="file" name="image" accept="image/*" required>
+
+    <button>Add Car</button>
+  </form>
+</body>
+</html>
